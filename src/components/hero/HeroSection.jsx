@@ -5,16 +5,16 @@ import React from 'react'
 const HeroSection = () => {
   return (
     <div className=" w-full h-[72.68518518518519vh] flex justify-center gap-[60px] items-center ">
-    <div className=" relative bg-hero-primary w-full  h-full ">
+    <div className=" relative bg-hero-primary w-full overflow-hidden  h-full ">
       <img
-        className=" absolute h-full w-auto object-cover "
-        src="/src/assets/heroImage.png"
+        className=" absolute h-auto scale-[1.5] bottom-[15%] w-auto object-cover "
+        src="https://github.com/lizzy-km/little-learner/blob/main_dev/src/assets/heroImage.png?raw=true"
         alt=""
         srcset=""
       />
       <img
-        className=" absolute h-[80%] left-[10%] top-[10%] w-auto object-cover "
-        src="/src/assets/circleGroup.svg"
+        className=" absolute h-auto  w-auto scale-95 left-[10%] top-[5%] object-cover "
+        src="https://raw.githubusercontent.com/lizzy-km/little-learner/d11e5cb6f2572ab4222877732936314ee8af2a40/src/assets/circleGroup.svg"
         alt=""
         srcset=""
       />
