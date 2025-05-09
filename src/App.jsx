@@ -14,6 +14,7 @@ import IconPfOne from "../src/assets/Icon_pf_01.svg?react";
 import IconPfTwo from "../src/assets/Icon_pf_02.svg?react";
 import IconPfThree from "../src/assets/Icon_pf_03.svg?react";
 import Cards from "./components/container/Cards";
+import ArrowLeft from "../src/assets/arrowLeft.svg?react";
 
 function App() {
   const cardsData1 = [
@@ -157,10 +158,22 @@ function App() {
         "Delve into our comprehensive academic programs designed to stimulate young minds, foster creativity, and encourage a love for learning. Explore our well-rounded curriculum that nurtures both intellectual and social development.",
       id: 2,
     },
-
-  
   ];
 
+  const detail2 = [
+    {
+      title: "Student Life",
+      description:
+        "Peek into the vibrant and enriching world of Student Life at Little Learners Academy. Discover the array of extracurricular activities, arts and crafts, sports, and social events that make our school experience truly memorable.",
+      id: 1,
+    },
+    {
+      title: "Admissions",
+      description:
+        "Learn about our Enrollment Process and how to secure your child's place at Little Learners Academy. Find information about our admission requirements, application deadlines, and available spaces.",
+      id: 2,
+    },
+  ];
 
   return (
     <div className="  font-raleway bg-container w-full max-h-screen overflow-y-auto h-screen flex flex-col px-[51px] py-[18px] gap-[80px] ">
@@ -246,7 +259,10 @@ function App() {
           Header="Our Testimonials"
           subText={"Their Happy Words 🤗"}
           cards={
-            <div className=" flex w-full gap-[50px] min-h-[462px] h-[462px] self-stretch  ">
+            <div className=" flex w-full gap-[50px] min-h-[462px] h-[462px] justify-center items-center self-stretch  ">
+              <div className=" rounded-[8px] rotate-180 border-2 border-grey h-[58px] w-[58px] flex p-[14px] gap-[10px]  ">
+                <ArrowLeft />
+              </div>
               {avatarData1?.map(({ icon, id, title, description }) => {
                 return (
                   <div className=" relative p-[50px] gap-[30px] border-2 border-grey shadow-containerCard rounded-[12px] flex flex-col items-center justify-start w-full  min-h-full   ">
@@ -286,33 +302,215 @@ function App() {
                   </div>
                 );
               })}
+              <div className=" rounded-[8px]  border-2 border-grey h-[58px] w-[58px] flex p-[14px] gap-[10px]  ">
+                <ArrowLeft />
+              </div>
             </div>
           }
           cards2={false}
         />
 
-        <Container col={false}
+        <Container
+          col={false}
           subText2="Find all the essential information you need in our FAQ section, designed to address the most frequently asked questions and help you make informed decisions for your child's education."
           Header="Frequently Asked Questions"
           subText={"Solutions For The Doubts"}
           cards={
             <div className=" flex flex-col w-full gap-[30px] min-h-[665px] h-[665px] self-stretch  ">
               {faqData1.map(({ title, description, id }) => {
-                return <Cards key={id} title={title} description={description} /> ;
+                return (
+                  <Cards key={id} title={title} description={description} />
+                );
               })}
             </div>
           }
-          cards2={ <div className=" flex flex-col w-full gap-[30px] min-h-[665px] h-[665px] self-stretch  ">
-            {faqData2.map(({ title, description, id }) => {
-              return <Cards key={id} title={title} description={description} /> ;
-            })}
-          </div>}
+          cards2={
+            <div className=" flex flex-col w-full gap-[30px] min-h-[665px] h-[665px] self-stretch  ">
+              {faqData2.map(({ title, description, id }) => {
+                return (
+                  <Cards key={id} title={title} description={description} />
+                );
+              })}
+            </div>
+          }
+        />
+
+        <Container
+          col={true}
+          subText2="Your gateway to discovering a wealth of valuable information about our kindergarten school, Feel free to explore and learn more about the enriching experiences that await your child at our kindergarten school"
+          Header="Navigate through our Pages"
+          subText={"Explore More"}
+          cards2={
+            <div className=" flex gap-[50px] items-start self-stretch h-[588px]  ">
+              {detail2.map(({ title, description, id }) => {
+                return (
+                  <div className=" bg-white rounded-[12px] border-2 border-grey shadow-containerCard flex flex-col gap-[80px] p-[80px] w-full h-full items-start ">
+                    <div className=" flex w-full flex-col justify-center items-center gap-[50px] self-stretch ">
+                      <div className=" flex flex-col gap-[30px] justify-center items-center ">
+                        <p
+                          style={{
+                            lineHeight: "130%",
+                          }}
+                          className=" flex  text-center font-raleway text-grey text-[48px] font-bold "
+                        >
+                          {title}
+                        </p>
+
+                        <div className=" flex w-full h-[20px] gap-[10px] items-center self-stretch  ">
+                          <div className=" flex gap-[-6px] min-w-[93px] items-center ">
+                            <div className=" z-[99] min-w-[20px] min-h-[20px] bg-white rounded-full border-2 border-grey "></div>
+
+                            <div className="  ml-[-3px] flex py-[6px] pr-[6px] gap-[10px] w-full items-center bg-hero-primary ">
+                              <span className=" w-full h-[2px] bg-[#000] "></span>
+                            </div>
+                          </div>
+                          <div className=" flex   min-w-[93px] items-center ">
+                            <div className=" flex py-[6px] px-[6px] gap-[10px] w-full items-center bg-hero-primary ">
+                              <span className=" w-full h-[2px] bg-[#000] "></span>
+                            </div>
+                          </div>
+                          <div className=" flex   min-w-[93px] items-center ">
+                            <div className=" flex py-[6px] px-[6px] gap-[10px] w-full items-center bg-hero-primary ">
+                              <span className=" w-full h-[2px] bg-[#000] "></span>
+                            </div>
+                          </div>
+                          <div className=" flex   min-w-[93px] items-center ">
+                            <div className=" flex py-[6px] px-[6px] gap-[10px] w-full items-center bg-hero-primary ">
+                              <span className=" w-full h-[2px] bg-[#000] "></span>
+                            </div>
+                          </div>
+                          <div className=" flex   min-w-[93px] items-center ">
+                            <div className=" flex py-[6px] px-[6px] gap-[10px] w-full items-center bg-hero-primary ">
+                              <span className=" w-full h-[2px] bg-[#000] "></span>
+                            </div>
+                          </div>
+
+                          <div className=" rotate-180 flex gap-[-6px] min-w-[93px] items-center ">
+                            <div className=" z-[99] min-w-[20px] min-h-[20px] bg-white rounded-full border-2 border-grey "></div>
+
+                            <div className="  ml-[-3px] flex py-[6px] pr-[6px] gap-[10px] w-full items-center bg-hero-primary ">
+                              <span className=" w-full h-[2px] bg-[#000] "></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p
+                        style={{
+                          lineHeight: "150%",
+                        }}
+                        className=" flex  text-center font-outfit text-grey text-[20px] font-medium "
+                      >
+                        {description}
+                      </p>
+                    </div>
+                    <div className=" flex gap-[10px] py-[18px] justify-center rounded-[10px] border-2 border-grey bg-secondary shadow-containerCard items-center self-stretch ">
+                      <p
+                        style={{
+                          lineHeight: "150%",
+                        }}
+                        className=" flex  text-center font-outfit text-[#333] text-[20px] font-medium "
+                      >
+                        Learn More
+                      </p>
+                      <ArrowLeft />
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          }
+          cards={
+            <div className=" flex gap-[50px] items-start self-stretch h-[588px]  ">
+              {detail1.map(({ title, description, id }) => {
+                return (
+                  <div className=" bg-white rounded-[12px] border-2 border-grey shadow-containerCard flex flex-col gap-[80px] p-[80px] w-full h-full items-start ">
+                    <div className=" flex w-full flex-col justify-center items-center gap-[50px] self-stretch ">
+                      <div className=" flex flex-col gap-[30px] justify-center items-center ">
+                        <p
+                          style={{
+                            lineHeight: "130%",
+                          }}
+                          className=" flex  text-center font-raleway text-grey text-[48px] font-bold "
+                        >
+                          {title}
+                        </p>
+
+                        <div className=" flex w-full h-[20px] gap-[10px] items-center self-stretch  ">
+                          <div className=" flex gap-[-6px] min-w-[93px] items-center ">
+                            <div className=" z-[99] min-w-[20px] min-h-[20px] bg-white rounded-full border-2 border-grey "></div>
+
+                            <div className="  ml-[-3px] flex py-[6px] pr-[6px] gap-[10px] w-full items-center bg-hero-primary ">
+                              <span className=" w-full h-[2px] bg-[#000] "></span>
+                            </div>
+                          </div>
+                          <div className=" flex   min-w-[93px] items-center ">
+                            <div className=" flex py-[6px] px-[6px] gap-[10px] w-full items-center bg-hero-primary ">
+                              <span className=" w-full h-[2px] bg-[#000] "></span>
+                            </div>
+                          </div>
+                          <div className=" flex   min-w-[93px] items-center ">
+                            <div className=" flex py-[6px] px-[6px] gap-[10px] w-full items-center bg-hero-primary ">
+                              <span className=" w-full h-[2px] bg-[#000] "></span>
+                            </div>
+                          </div>
+                          <div className=" flex   min-w-[93px] items-center ">
+                            <div className=" flex py-[6px] px-[6px] gap-[10px] w-full items-center bg-hero-primary ">
+                              <span className=" w-full h-[2px] bg-[#000] "></span>
+                            </div>
+                          </div>
+                          <div className=" flex   min-w-[93px] items-center ">
+                            <div className=" flex py-[6px] px-[6px] gap-[10px] w-full items-center bg-hero-primary ">
+                              <span className=" w-full h-[2px] bg-[#000] "></span>
+                            </div>
+                          </div>
+
+                          <div className=" rotate-180 flex gap-[-6px] min-w-[93px] items-center ">
+                            <div className=" z-[99] min-w-[20px] min-h-[20px] bg-white rounded-full border-2 border-grey "></div>
+
+                            <div className="  ml-[-3px] flex py-[6px] pr-[6px] gap-[10px] w-full items-center bg-hero-primary ">
+                              <span className=" w-full h-[2px] bg-[#000] "></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p
+                        style={{
+                          lineHeight: "150%",
+                        }}
+                        className=" flex  text-center font-outfit text-grey text-[20px] font-medium "
+                      >
+                        {description}
+                      </p>
+                    </div>
+                    <div className=" flex gap-[10px] py-[18px] justify-center rounded-[10px] border-2 border-grey bg-secondary shadow-containerCard items-center self-stretch ">
+                      <p
+                        style={{
+                          lineHeight: "150%",
+                        }}
+                        className=" flex  text-center font-outfit text-[#333] text-[20px] font-medium "
+                      >
+                        Learn More
+                      </p>
+                      <ArrowLeft />
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          }
+          // cards2={
+          //   <div className=" flex flex-col w-full gap-[30px] min-h-[665px] h-[665px] self-stretch  ">
+          //     {detail1.map(({ title, description, id }) => {
+          //       return (
+          //         <Cards key={id} title={title} description={description} />
+          //       );
+          //     })}
+          //   </div>
+          // }
         />
       </section>
 
-      <footer className=" py-[100px] px-[113px] w-full h-[711px] rounded-[12px] border-2 border-grey shadow-containerCard " >
-        
-      </footer>
+      <footer className=" py-[100px] px-[113px] w-full h-[711px] rounded-[12px] border-2 border-grey shadow-containerCard "></footer>
     </div>
   );
 }
