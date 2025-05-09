@@ -18,9 +18,11 @@ import ArrowLeft from "../src/assets/arrowLeft.svg?react";
 import FaceBookIcon from "../src/assets/facebook_icon.svg?react";
 import TwitterIcon from "../src/assets/twitter_icon.svg?react";
 import LinkinIcon from "../src/assets/linkin_icon.svg?react";
-
-
-
+import Logo from "../src/assets/Logo.svg?react";
+import LogoText from "../src/assets/LogoText.svg?react";
+import MailIcon from "../src/assets/mail_icon.svg?react";
+import PhoneIcon from "../src/assets/phone_icon.svg?react";
+import NavigateIcon from "../src/assets/navigate_icon.svg?react";
 
 function App() {
   const cardsData1 = [
@@ -516,64 +518,182 @@ function App() {
         />
       </section>
 
-      <footer className=" py-[100px] px-[113px] w-full h-[711px] rounded-[12px] border-2 border-grey shadow-containerCard ">
-        <div className=" flex items-start gap-[80px]  self-stretch w-full h-[348px] " >
-          
+      <footer className="  justify-center px-[100px] gap-[50px] items-center flex flex-col w-full min-h-[711px] h-[711px] rounded-[12px] border-2 bg-white border-grey shadow-containerCard ">
+        <div className=" flex items-start gap-[80px] justify-between  self-stretch w-full h-[348px] ">
+          <div className=" h-full flex flex-col gap-[50px] w-[20%] items-start ">
+            <div className=" flex flex-col items-start self-stretch gap-[20px] ">
+              <div className=" w-[228.367px] h-[50px] flex gap-[8.308px] items-center justify-start  ">
+                <Logo />
+                <LogoText />
+              </div>
+
+              <p className=" line-150 w-[519px] text-[20px] font-outfit text-[#4c4c4d] font-medium ">
+                We believe in the power of play to foster creativity,
+                problem-solving skills, and imagination.
+              </p>
+            </div>
+            <div className=" flex flex-col gap-[24px] self-stretch w-full ">
+              <div className=" w-full flex gap-[10px] self-stretch items-start ">
+                <div className=" flex w-[40px] h-[40px] rounded-[6px] p-[8px] border-2 border-grey ">
+                  <MailIcon />
+                </div>
+                <p className=" line-150 text-[20px] font-outfit text-grey font-medium ">
+                  hello@littlelearners.com{" "}
+                </p>
+              </div>
+
+              <div className=" w-full flex gap-[10px] self-stretch items-start ">
+                <div className=" flex w-[40px] h-[40px] rounded-[6px] p-[8px] border-2 border-grey ">
+                  <PhoneIcon />
+                </div>
+                <p className=" line-150 text-[20px] font-outfit text-grey font-medium ">
+                  +91 91813 23 2309{" "}
+                </p>{" "}
+              </div>
+
+              <div className=" w-full flex gap-[10px] self-stretch items-start ">
+                <div className=" flex w-[40px] h-[40px] rounded-[6px] p-[8px] border-2 border-grey ">
+                  <NavigateIcon />
+                </div>
+                <p className=" line-150 text-[20px] font-outfit text-grey font-medium ">
+                  Somewhere in the World{" "}
+                </p>{" "}
+              </div>
+            </div>
+          </div>
+          <div className=" h-[260px] flex gap-[30px] w-[60%]  ">
+            <div className=" flex flex-col gap-[24px] w-full h-full ">
+              <p className=" line-150  font-semibold text-[20px] font-outfit text-grey ">
+                Home
+              </p>
+
+              <div className=" flex flex-col gap-[16px] items-start ">
+                <p className=" line-150  font-medium text-[20px] font-outfit text-[#333] ">
+                  Features
+                </p>
+                <p className=" line-150  font-medium text-[20px] font-outfit text-[#333] ">
+                  Our Testimonials{" "}
+                </p>
+                <p className=" line-150  font-medium text-[20px] font-outfit text-[#333] ">
+                  FAQ{" "}
+                </p>
+              </div>
+            </div>
+
+            <div className=" flex flex-col gap-[24px] w-full h-full ">
+              <p className=" line-150  font-semibold text-[20px] font-outfit text-grey ">
+                About Us
+              </p>
+
+              <div className=" flex flex-col gap-[16px] items-start ">
+                <p className=" line-150  font-medium text-[20px] font-outfit text-[#333] ">
+                  Our Mission
+                </p>
+                <p className=" line-150  font-medium text-[20px] font-outfit text-[#333] ">
+                  Our Vission{" "}
+                </p>
+                <p className=" line-150  font-medium text-[20px] font-outfit text-[#333] ">
+                  Awards and Recognitions
+                </p>
+                <p className=" line-150  font-medium text-[20px] font-outfit text-[#333] ">
+                  History
+                </p>
+                <p className=" line-150  font-medium text-[20px] font-outfit text-[#333] ">
+                  Teachers
+                </p>
+              </div>
+            </div>
+
+            <div className=" flex flex-col gap-[24px] w-full h-full ">
+              <p className=" line-150  font-semibold text-[20px] font-outfit text-grey ">
+              Academics
+              </p>
+
+              <div className=" flex flex-col gap-[16px] items-start ">
+                <p className=" line-150  font-medium text-[20px] font-outfit text-[#333] ">
+                Special Features
+                </p>
+                <p className=" line-150  font-medium text-[20px] font-outfit text-[#333] ">
+                Gallery
+                </p>
+               
+              </div>
+            </div>
+
+            <div className=" flex flex-col gap-[24px] w-full h-full ">
+              <p className=" line-150  font-semibold text-[20px] font-outfit text-grey ">
+              Contact Us
+              </p>
+
+              <div className=" flex flex-col gap-[16px] items-start ">
+                <p className=" line-150  font-medium text-[20px] font-outfit text-[#333] ">
+                Information
+                </p>
+                <p className=" line-150  font-medium text-[20px] font-outfit text-[#333] ">
+                Map & Direction
+                </p>
+                
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div className=" flex flex-col items-center gap-[30px]  self-stretch w-full h-[173px] " >
-         <div className=" h-[1px] w-full bg-grey border-t border-grey " >
-          
-         </div>
-      <div className=" flex justify-between items-center self-stretch w-full h-[56px] " >
-        <div className=" h-auto flex gap-[16px] items-start " >
-          <p style={{
-            lineHeight:'150%'
-          }} className=" text-[#333] font-outfit text-[18px] font-medium " >
-            Term of Service
-          </p>
-          <div className=" h-[27px] border border-grey " >
-            
+        <div className=" flex flex-col items-center gap-[30px]  self-stretch w-full h-[173px] ">
+          <div className=" h-[1px] w-full bg-grey border-t border-grey "></div>
+          <div className=" flex justify-between items-center self-stretch w-full h-[56px] ">
+            <div className=" h-auto flex gap-[16px] items-start ">
+              <p
+                style={{
+                  lineHeight: "150%",
+                }}
+                className=" text-[#333] font-outfit text-[18px] font-medium "
+              >
+                Term of Service
+              </p>
+              <div className=" h-[27px] border border-grey "></div>
+
+              <p
+                style={{
+                  lineHeight: "150%",
+                }}
+                className=" text-[#333] font-outfit text-[18px] font-medium "
+              >
+                Privacy Policy
+              </p>
+              <div className=" h-[27px] border border-grey "></div>
+              <p
+                style={{
+                  lineHeight: "150%",
+                }}
+                className=" text-[#333] font-outfit text-[18px] font-medium "
+              >
+                Cookie Policy{" "}
+              </p>
+            </div>
+
+            <div className=" flex gap-[14px] h-[56px] items-start ">
+              <div className=" w-[56px] p-[16px] h-[56px] rounded-[8px] border-2  border-grey bg-secondary ">
+                <FaceBookIcon />
+              </div>
+              <div className=" w-[56px] h-[56px] p-[16px]  rounded-[8px] border-2  border-grey bg-secondary ">
+                <TwitterIcon />
+              </div>
+              <div className=" w-[56px] h-[56px] p-[16px]  rounded-[8px] border-2  border-grey bg-secondary ">
+                <LinkinIcon />
+              </div>
+            </div>
           </div>
 
-          <p style={{
-            lineHeight:'150%'
-          }} className=" text-[#333] font-outfit text-[18px] font-medium " >
-            Privacy Policy
-          </p>
-          <div className=" h-[27px] border border-grey " >
-            
-          </div>
-          <p style={{
-            lineHeight:'150%'
-          }} className=" text-[#333] font-outfit text-[18px] font-medium " >
-Cookie Policy          </p>
-         
-        </div>
+          <div className=" h-[1px] w-full bg-grey border-t border-grey "></div>
 
-        <div className=" flex gap-[14px] h-[56px] items-start " >
-          <div className=" w-[56px] p-[16px] h-[56px] rounded-[8px] border-2  border-grey bg-secondary " >
-            <FaceBookIcon />
-          </div>
-          <div className=" w-[56px] h-[56px] p-[16px]  rounded-[8px] border-2  border-grey bg-secondary " >
-            <TwitterIcon />
-          </div>
-          <div className=" w-[56px] h-[56px] p-[16px]  rounded-[8px] border-2  border-grey bg-secondary " >
-            <LinkinIcon />
-          </div>
-        </div>
-      </div>
-
-         <div className=" h-[1px] w-full bg-grey border-t border-grey " >
-          
-         </div>
-
-         <p style={{
-          lineHeight:'150%'
-         }} className=" text-[18px] font-outfit font-medium text-center w-full text-[#656567] "
+          <p
+            style={{
+              lineHeight: "150%",
+            }}
+            className=" text-[18px] font-outfit font-medium text-center w-full text-[#656567] "
           >
-         Copyright © [2023] Little Learners Academy. All rights reserved.
-         </p>
+            Copyright © [2023] Little Learners Academy. All rights reserved.
+          </p>
         </div>
       </footer>
     </div>
