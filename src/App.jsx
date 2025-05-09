@@ -3,16 +3,16 @@ import Container from "./components/container/Container";
 import NavBar from "./components/header/NavBar";
 import TopBanner from "./components/header/TopBanner";
 import HeroSection from "./components/hero/HeroSection";
-import IconOne from "./assets/Icon_01.svg?react";
-import IconTwo from "./assets/Icon_02.svg?react";
-import IconThree from "./assets/Icon_03.svg?react";
-import IconFour from "./assets/Icon_04.svg?react";
-import IconFive from "./assets/Icon_05.svg?react";
-import IconSix from "./assets/Icon_06.svg?react";
-import Star from "./assets/start.svg?react";
-import IconPfOne from "./assets/Icon_pf_01.svg?react";
-import IconPfTwo from "./assets/Icon_pf_02.svg?react";
-import IconPfThree from "./assets/Icon_pf_03.svg?react";
+import IconOne from "../src/assets/Icon_01.svg?react";
+import IconTwo from "../src/assets/Icon_02.svg?react";
+import IconThree from "../src/assets/Icon_03.svg?react";
+import IconFour from "../src/assets/Icon_04.svg?react";
+import IconFive from "../src/assets/Icon_05.svg?react";
+import IconSix from "../src/assets/Icon_06.svg?react";
+import Star from "../src/assets/start.svg?react";
+import IconPfOne from "../src/assets/Icon_pf_01.svg?react";
+import IconPfTwo from "../src/assets/Icon_pf_02.svg?react";
+import IconPfThree from "../src/assets/Icon_pf_03.svg?react";
 import Cards from "./components/container/Cards";
 
 function App() {
