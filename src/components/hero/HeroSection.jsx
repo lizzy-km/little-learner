@@ -5,43 +5,29 @@ import React from 'react'
 const HeroSection = () => {
   return (
     <div className=" w-full h-[72.68518518518519vh] flex justify-center gap-[60px] items-center ">
-    <div className=" relative bg-hero-primary w-full overflow-hidden  h-full ">
+    <div className=" relative bg-hero-primary w-full   h-full ">
       <img
-        className=" absolute h-auto scale-[1.5] bottom-[15%] w-auto object-cover "
+        className=" absolute h-full   w-auto object-cover "
         src="https://github.com/lizzy-km/little-learner/blob/main_dev/src/assets/heroImage.png?raw=true"
         alt=""
         srcset=""
       />
       <img
-        className=" absolute h-auto  w-auto scale-95 left-[10%] top-[5%] object-cover "
+        className=" absolute h-[90%]  w-auto  left-[10%] top-[5%] object-cover "
         src="https://raw.githubusercontent.com/lizzy-km/little-learner/d11e5cb6f2572ab4222877732936314ee8af2a40/src/assets/circleGroup.svg"
         alt=""
         srcset=""
       />
 
-      {/* <div className=" absolute top-[-1.5%] left-[-1%] flex flex-col w-full  justify-between h-full items-start ">
-        <div className=" relative flex w-[103%] h-auto justify-start items-start ">
-          <span className=" absolute p-[10px] rounded-full border-grey border-2 bg-white "></span>
-          <span className=" left-[24px] top-[10px] absolute w-[94%] border-t-[2px] border-grey "></span>
-          <span className=" right-[1.5%]  absolute p-[10px] rounded-full border-grey border-2 bg-white "></span>
-        </div>
+      <div className=" z-[999] absolute  flex flex-col w-full  justify-between h-full items-start ">
+       
+      </div> 
 
-        <div className=" relative flex w-[104%] h-auto justify-start items-start ">
-          <span className=" absolute p-[10px] rounded-full border-grey border-2 bg-white "></span>
-          <span className=" left-[24px] top-[10px] absolute w-[94%] border-t-[2px] border-grey "></span>
-          <span className=" right-[1.5%]  absolute p-[10px] rounded-full border-grey border-2 bg-white "></span>
-        </div>
-      </div> */}
+   
 
-      {/* <div className=" rotate-90 absolute top-[-2%] right-[-1.5%] flex flex-col w-full  justify-between h-full items-start ">
-        <div className=" relative flex w-[104%] h-auto justify-start items-start ">
-          <span className=" left-[24px] top-[10px] absolute w-[94%] border-t-[2px] border-grey "></span>
-        </div>
+     
 
-        <div className=" relative flex w-[104%] h-auto justify-start items-start ">
-          <span className=" left-[24px] top-[10px] absolute w-[94%] border-t-[2px] border-grey "></span>
-        </div>
-      </div> */}
+      
     </div>
     <div className=" min-h-[500px] w-full flex flex-col gap-[60px] items-start ">
       <div className=" flex flex-col items-start gap-[30px] ">
