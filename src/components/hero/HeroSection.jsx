@@ -1,5 +1,7 @@
 import React from 'react'
 
+ 
+
 const HeroSection = () => {
   return (
     <div className=" w-full h-[72.68518518518519vh] flex justify-center gap-[60px] items-center ">
