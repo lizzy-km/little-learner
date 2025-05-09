@@ -309,6 +309,10 @@ function App() {
           </div>}
         />
       </section>
+
+      <footer className=" py-[100px] px-[113px] w-full h-[711px] rounded-[12px] border-2 border-grey shadow-containerCard " >
+        
+      </footer>
     </div>
   );
 }
