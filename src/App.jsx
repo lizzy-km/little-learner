@@ -15,6 +15,12 @@ import IconPfTwo from "../src/assets/Icon_pf_02.svg?react";
 import IconPfThree from "../src/assets/Icon_pf_03.svg?react";
 import Cards from "./components/container/Cards";
 import ArrowLeft from "../src/assets/arrowLeft.svg?react";
+import FaceBookIcon from "../src/assets/facebook_icon.svg?react";
+import TwitterIcon from "../src/assets/twitter_icon.svg?react";
+import LinkinIcon from "../src/assets/linkin_icon.svg?react";
+
+
+
 
 function App() {
   const cardsData1 = [
@@ -510,7 +516,66 @@ function App() {
         />
       </section>
 
-      <footer className=" py-[100px] px-[113px] w-full h-[711px] rounded-[12px] border-2 border-grey shadow-containerCard "></footer>
+      <footer className=" py-[100px] px-[113px] w-full h-[711px] rounded-[12px] border-2 border-grey shadow-containerCard ">
+        <div className=" flex items-start gap-[80px]  self-stretch w-full h-[348px] " >
+          
+        </div>
+
+        <div className=" flex flex-col items-center gap-[30px]  self-stretch w-full h-[173px] " >
+         <div className=" h-[1px] w-full bg-grey border-t border-grey " >
+          
+         </div>
+      <div className=" flex justify-between items-center self-stretch w-full h-[56px] " >
+        <div className=" h-auto flex gap-[16px] items-start " >
+          <p style={{
+            lineHeight:'150%'
+          }} className=" text-[#333] font-outfit text-[18px] font-medium " >
+            Term of Service
+          </p>
+          <div className=" h-[27px] border border-grey " >
+            
+          </div>
+
+          <p style={{
+            lineHeight:'150%'
+          }} className=" text-[#333] font-outfit text-[18px] font-medium " >
+            Privacy Policy
+          </p>
+          <div className=" h-[27px] border border-grey " >
+            
+          </div>
+          <p style={{
+            lineHeight:'150%'
+          }} className=" text-[#333] font-outfit text-[18px] font-medium " >
+Cookie Policy          </p>
+         
+        </div>
+
+        <div className=" flex gap-[14px] h-[56px] items-start " >
+          <div className=" w-[56px] p-[16px] h-[56px] rounded-[8px] border-2  border-grey bg-secondary " >
+            <FaceBookIcon />
+          </div>
+          <div className=" w-[56px] h-[56px] p-[16px]  rounded-[8px] border-2  border-grey bg-secondary " >
+            <TwitterIcon />
+          </div>
+          <div className=" w-[56px] h-[56px] p-[16px]  rounded-[8px] border-2  border-grey bg-secondary " >
+            <LinkinIcon />
+          </div>
+        </div>
+      </div>
+
+         <div className=" h-[1px] w-full bg-grey border-t border-grey " >
+          
+         </div>
+
+         <p style={{
+          lineHeight:'150%'
+         }} className=" text-[18px] font-outfit font-medium text-center w-full text-[#656567] "
+          >
+         Copyright © [2023] Little Learners Academy. All rights reserved.
+         </p>
+        </div>
+      </footer>
     </div>
   );
 }
