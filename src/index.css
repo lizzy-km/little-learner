@@ -2,10 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-#root {
-    --primary-color :#ff8d4d;
-    --avatar-bg:#ffdecc;
-    --secondary-color:#FFEFE5;
-    --container-bg:#FFF5F0
-  
-  }

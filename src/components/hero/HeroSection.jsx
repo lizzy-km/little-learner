@@ -19,20 +19,20 @@ const HeroSection = () => {
 
         <div className=" z-[999] absolute  flex flex-col top-[-0.5%] left-[-0.5%] w-[101%] h-[101%]   justify-between  items-start ">
           <div className=" w-full h-full flex justify-between items-start ">
-            <div className=" flex flex-col h-full justify-between items-center w-[16px] bg-hero-primary  ">
+            <div className=" flex flex-col h-full justify-between items-center w-[10px] bg-hero-primary  ">
               <div className=" w-[2px] border h-full border-grey "></div>
             </div>
 
             <div className=" flex flex-col h-[100%] justify-between items-center w-full   ">
-              <div className=" flex flex-col h-[16px] justify-center items-center w-full bg-hero-primary  ">
+              <div className=" flex flex-col h-[10px] justify-center items-center w-full bg-hero-primary  ">
                 <div className=" w-[100%] border h-[2px] border-grey "></div>
               </div>
-              <div className=" flex flex-col h-[16px] justify-center items-center w-full bg-hero-primary  ">
+              <div className=" flex flex-col h-[10px] justify-center items-center w-full bg-hero-primary  ">
                 <div className=" w-[100%] border h-[2px] border-grey "></div>
               </div>
             </div>
 
-            <div className=" flex flex-col h-full justify-between items-center w-[16px] bg-hero-primary  ">
+            <div className=" flex flex-col h-full justify-between items-center w-[10px] bg-hero-primary  ">
               <div className=" w-[2px] border h-full border-grey "></div>
             </div>
           </div>
