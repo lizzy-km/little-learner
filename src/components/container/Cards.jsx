@@ -10,7 +10,7 @@ const Cards = ({ title, description }) => {
         height: show ? "auto" : "auto",
         backgroundColor: show ? "white" : "#FFEFE5",
       }}
-      className=" flex p-[40px] gap-[30px] items-start transition-all justify-center self-stretch w-full rounded-[12px] border-2 vorder-grey  "
+      className=" flex p-[40px] gap-[30px] items-start transition-all justify-center self-stretch w-full rounded-[12px] border-2 border-grey  "
     >
       <div className=" flex flex-col gap-[24px] w-full self-stretch ">
         <p
@@ -40,7 +40,7 @@ const Cards = ({ title, description }) => {
 
       <div
         onClick={() => setShow((prev) => !prev)}
-        className=" p-[8px] rounded-[6px] border-2 border-grey bg-container "
+        className=" p-[8px] cursor-pointer rounded-[6px] border-2 border-grey bg-container "
       >
         {show ? <MinusIcon /> : <PlusIcon />}
       </div>
