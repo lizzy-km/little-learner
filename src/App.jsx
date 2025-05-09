@@ -520,7 +520,7 @@ function App() {
 
       <footer className="  justify-center px-[100px] gap-[50px] items-center flex flex-col w-full min-h-[711px] h-[711px] rounded-[12px] border-2 bg-white border-grey shadow-containerCard ">
         <div className=" flex items-start gap-[80px] justify-between  self-stretch w-full h-[348px] ">
-          <div className=" h-full flex flex-col gap-[50px] w-[20%] items-start ">
+          <div className=" h-full flex flex-col gap-[50px] w-[519px] items-start ">
             <div className=" flex flex-col items-start self-stretch gap-[20px] ">
               <div className=" w-[228.367px] h-[50px] flex gap-[8.308px] items-center justify-start  ">
                 <Logo />
@@ -561,8 +561,8 @@ function App() {
               </div>
             </div>
           </div>
-          <div className=" h-[260px] flex gap-[30px] w-[60%]  ">
-            <div className=" flex flex-col gap-[24px] w-full h-full ">
+          <div className=" h-[260px] flex gap-[30px] w-auto  ">
+            <div className=" flex flex-col gap-[24px] w-[226px] h-full ">
               <p className=" line-150  font-semibold text-[20px] font-outfit text-grey ">
                 Home
               </p>
@@ -580,7 +580,7 @@ function App() {
               </div>
             </div>
 
-            <div className=" flex flex-col gap-[24px] w-full h-full ">
+            <div className=" flex flex-col gap-[24px] w-[226px] h-full ">
               <p className=" line-150  font-semibold text-[20px] font-outfit text-grey ">
                 About Us
               </p>
@@ -604,7 +604,7 @@ function App() {
               </div>
             </div>
 
-            <div className=" flex flex-col gap-[24px] w-full h-full ">
+            <div className=" flex flex-col gap-[24px] w-[226px] h-full ">
               <p className=" line-150  font-semibold text-[20px] font-outfit text-grey ">
               Academics
               </p>
@@ -620,7 +620,7 @@ function App() {
               </div>
             </div>
 
-            <div className=" flex flex-col gap-[24px] w-full h-full ">
+            <div className=" flex flex-col gap-[24px] w-[226px] h-full ">
               <p className=" line-150  font-semibold text-[20px] font-outfit text-grey ">
               Contact Us
               </p>
