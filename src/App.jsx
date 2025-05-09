@@ -268,12 +268,12 @@ function App() {
           subText={"Their Happy Words 🤗"}
           cards={
             <div className=" flex w-full gap-[50px] min-h-[462px] h-[462px] justify-center items-center self-stretch  ">
-              <div className=" rounded-[8px] rotate-180 border-2 border-grey h-[58px] w-[58px] flex p-[14px] gap-[10px]  ">
+              <div className=" rounded-[8px] bg-[#fff] rotate-180 border-2 border-grey h-[58px] w-[58px] flex p-[14px] gap-[10px]  ">
                 <ArrowLeft />
               </div>
               {avatarData1?.map(({ icon, id, title, description }) => {
                 return (
-                  <div className=" relative p-[50px] gap-[30px] border-2 border-grey shadow-containerCard rounded-[12px] flex flex-col items-center justify-start w-full  min-h-full   ">
+                  <div className=" relative bg-[#fff] p-[50px] gap-[30px] border-2 border-grey shadow-containerCard rounded-[12px] flex flex-col items-center justify-start w-[425.33px]  min-h-full  h-full  ">
                     <div className=" flex flex-col gap-[12px] items-center self-stretch justify-center w-full ">
                       <div className=" flex p-[10px] rounded-full border border-[#333] bg-container w-[80px] h-[80px] ">
                         {icon}
@@ -310,7 +310,7 @@ function App() {
                   </div>
                 );
               })}
-              <div className=" rounded-[8px]  border-2 border-grey h-[58px] w-[58px] flex p-[14px] gap-[10px]  ">
+              <div className=" bg-[#fff] rounded-[8px]  border-2 border-grey h-[58px] w-[58px] flex p-[14px] gap-[10px]  ">
                 <ArrowLeft />
               </div>
             </div>
